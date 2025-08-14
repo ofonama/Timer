@@ -1,0 +1,88 @@
+body {
+    user-select: none;
+}
+
+header {
+    border-bottom: 1px solid #555;
+}
+
+.time {
+    border-top: 1px solid #555;
+}
+
+input.form-control {
+    border: 1px solid #555;
+    background: transparent;
+    color: #ccc;
+}
+
+select {
+    border: 1px solid #555 !important;
+}
+
+input.form-control:focus {
+    background: transparent;
+    color: #ccc;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+.cursive {
+    font-family: "Sacramento", cursive;
+} 
+.serif {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.sans-serif {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.monospace {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.serif {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+.background {
+    cursor: pointer;
+}
+
+
+@media (max-width: 992px) {
+    .collapse.navbar-collapse {
+        background-color: #333;
+        padding: 1rem;
+    }
+    .nav-pills {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}

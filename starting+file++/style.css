@@ -1,0 +1,131 @@
+body {
+  user-select: none;
+}
+
+img {
+    border-radius: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+span.arrow {
+    font-weight: thin;
+    transition: all 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.btn-primary:hover .arrow {
+    transform: translateX(5px);
+}
+
+.nav-pills {
+    margin-left: 20px;
+}
+
+p.nav-link {
+    cursor: pointer;
+}
+
+.dropdown .card {
+    display: none;
+} 
+
+p.nav-link:hover .dropdown .card{
+    display: block;
+}
+
+@keyframes float {
+    50% {
+        transform: translateY(10px);
+    }
+}
+
+
+/* Styling for cube */
+.cube-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Add a height to center the cube vertically */
+}
+
+.cube {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  transform: rotateX(0deg) rotateY(0deg);
+  transition: transform 1s;
+}
+
+.face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: large;
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background-color: rgba(135, 206, 235, 0.5);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.front {
+  transform: translateZ(50px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(50px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(50px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(50px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(50px);
+}
+
+.navbar-toggler {
+    border: none;
+    background-color: transparent;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    color: #111;
+    border: 1px solid #333;
+    border-radius: 0.25rem;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+@media (max-width: 992px) {
+    .collapse.navbar-collapse {
+        background-color: #333;
+        padding: 1rem;
+    }
+    .nav-pills {
+        flex-direction: column;
+    }
+    .nav-item {
+        margin-bottom: 0.5rem;
+    }
+}

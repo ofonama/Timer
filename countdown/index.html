@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>countdown</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" 
+        rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" 
+        crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;family=Sacramento&amp;display=swap" 
+        rel="stylesheet">
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body class="d-flex w-100 h-100 text-center"> 
+        <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column"> 
+            <h1 class="text-center mt-2 text-light"></h1>
+
+            <div class="timer mt-1 pt-0 text-light">00:00:00</div>
+
+            <h3 class="instructions text-secondary">Enter to Start, Spacebar to Pause or Resume. ESC to Reset and DEL to SETUP</h3>
+            <div class="time-up-message"></div>
+        </div>
+        <div class="row g-2">
+            <div class="col">
+                <button id="start-btn" class="btn btn-sm btn-primary">Start</button>
+            </div>
+            <div class="col">
+                <button id="stop-btn" class="btn btn-sm btn-outline-danger">Stop</button>
+            </div>
+            <div class="col">
+                <button id="re-start-btn" class="btn btn-sm btn-outline-secondary">Reset</button>
+            </div>
+            <div class="col">
+                <button id="pause-btn" class="btn btn-sm btn-light">Pause</button>
+            </div>
+            <div class="col">
+                <button id="continue-btn" class="btn btn-sm btn-outline-success">Resume</button>
+            </div>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" 
+        crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

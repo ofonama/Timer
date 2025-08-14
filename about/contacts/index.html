@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="head">
+            <h1></h1>
+        </section>
+
+        <main>
+            <div class="first">
+                <div class="number">            
+                    <h3>WhatsApp Number</h3>
+                    <div class="popover1" id="popover1">Nigeria</div>
+                    <div class="Nigeria" id="one"></div>
+                    <strong>+234 80 3386 3344</strong>
+                </div>
+                <div class="country">
+                    <h3>Country</h3>
+                    <div class="popover2" id="popover2">Nigeria</div>
+                    <div class="Nigeria" id="two"></div>
+                    <strong>A proud Nigerian</strong>
+                </div>
+            </div>
+
+            <div class="Email">
+                <h3>Email Address</h3>
+                <strong>ofonamatega@gmail.com</strong>
+            </div>
+            <a href="../index.html"><button><span>&#10096;</span> Go back</button></a>
+        </main>
+    </div>
+    <script>
+        const typewriterElement = document.querySelector("h1");
+        const typewriterText = "Contact Usen Ofonama";
+
+        let index = 0;
+        document.addEventListener("DOMContentLoaded", typeWriter);
+
+        function typeWriter() {
+            if (index < typewriterText.length) {
+                typewriterElement.innerHTML += typewriterText.charAt(index);
+                index++;
+                setTimeout(typeWriter, 100);
+            }
+        }
+
+        
+        const One = document.getElementById("one");
+        const Two = document.getElementById("two");
+        const popover1 = document.getElementById("popover1");
+        const popover2 = document.getElementById("popover2");
+
+        popover1.style.display = "none";
+        popover2.style.display = "none";
+
+        One.addEventListener("mouseover", () => {
+            // const popoverOne = popover1.value.trim();
+            popover1.style.display = "block";
+            const rect = One.getBoundingClientRect();
+            popover1.style.top = `${rect.top - rect.height - 10}px`;
+            popover1.style.left = `${rect.left - (rect.width / 2) - (popover1.offsetWidth / 2)}px`;
+        });
+
+        setTimeout(() => {
+            popover1.style.display = "none";
+        }, 2000);
+        
+        document.addEventListener('click', (e) => {
+        if (e.target !== One && !popover1.contains(e.target)) {
+            popover1.style.display = 'none';
+        }
+        });
+
+        Two.addEventListener("mouseover", () => {
+            // const popoverOne = popover1.value.trim();
+            popover2.style.display = "block";
+            const rect = Two.getBoundingClientRect();
+            popover2.style.top = `${rect.top - rect.height - 10}px`;
+            popover2.style.left = `${rect.left - (rect.width / 2) - (popover1.offsetWidth / 2)}px`;
+        });
+        
+        document.addEventListener('click', (e) => {
+        if (e.target !== Two && !popover2.contains(e.target)) {
+            popover2.style.display = 'none';
+        }
+        });
+
+        // const popoverButton = document.getElementById('popover-button');
+        // const popover = document.getElementById('popover');
+        // const popoverContent = document.querySelector('.popover-content');
+
+        // popoverButton.addEventListener('mouseover', (e) => {
+        //     const content = popoverButton.getAttribute('data-popover');
+        //     popoverContent.textContent = content;
+        //     popover.style.display = 'block';
+        //     const rect = popoverButton.getBoundingClientRect();
+        //     popover.style.top = `${rect.top + rect.height + 10}px`;
+        //     popover.style.left = `${rect.left + (rect.width / 2) - (popover.offsetWidth / 2)}px`;
+
+        //     // const timeout = 1000;
+        //     // setTimeout(() => {
+        //     //     popover.style.display = "none";
+        //     // }, timeout);
+        // });
+
+    </script>
+</body>
+</html>
