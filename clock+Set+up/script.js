@@ -64,13 +64,15 @@ form.on("submit", (e) => {
         }
     }
 
-    // Font validation (optional)
-    if (font !== '' && font !== "Choose...") {
+    if (font !== '') {
         fontInput.attr("class", "form-select border-success is-valid");
-        // $("#validate-message-four").html("");
         localStorage.setItem("font", font);
-        // isValid = true;
+    } else {
+        fontInput.attr("class", "form-select");
+        localStorage.setItem("font", "Sans-serif"); // or set a default font
     }
+    // fontInput.attr("class", "form-select");
+    // localStorage.setItem("font", font);
 
     // Duration validation
 
