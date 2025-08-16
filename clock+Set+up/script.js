@@ -125,7 +125,7 @@ form.on("submit", (e) => {
         btnSuccess.html("loading");
         setTimeout(() => {
             btnSuccess.html("Next!");
-        }, 2000);
+        }, 1000);
         window.location.href = "../countdown/index.html";
     }
 });
