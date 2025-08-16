@@ -130,10 +130,6 @@ form.on("submit", (e) => {
     }
 });
 
-const background = $(".background");
-const option1 = $(".light");
-const option2 = $(".dark");
-
 // option1.on("click", (e) => {
 //     e.preventDefault();
 //     body.attr("class", "bg-light text-dark");
