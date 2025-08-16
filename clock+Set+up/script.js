@@ -129,13 +129,3 @@ form.on("submit", (e) => {
         window.location.href = "../countdown/index.html";
     }
 });
-
-// option1.on("click", (e) => {
-//     e.preventDefault();
-//     body.attr("class", "bg-light text-dark");
-// });
-
-// option2.on("click", (e) => {
-//     e.preventDefault();
-//     body.attr("class", "bg-dark text-light");
-// });
