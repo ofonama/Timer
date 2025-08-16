@@ -123,6 +123,9 @@ form.on("submit", (e) => {
 
     if (isValid) {
         btnSuccess.html("loading");
+        setTimeout(() => {
+            btnSuccess.html("Next!");
+        }, 2000);
         window.location.href = "../countdown/index.html";
     }
 });
