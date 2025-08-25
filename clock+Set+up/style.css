@@ -86,3 +86,7 @@ input.form-control:focus {
         margin-bottom: 0.5rem;
     }
 }
+
+input::placeholder {
+    color: #ddd;
+}
