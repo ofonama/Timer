@@ -37,24 +37,24 @@
 
         <form id="timer-form">
             <div class="row">
-                <div class="col">
+                <div class="col-md-6">
                     <label for="form" class="form-label text-light">Title Of Timer <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="form" placeholder="Sports" />
                     <p id="validate-message-one" class="text-danger"></p>
                 </div>
-                <div class="col">
+                <div class="col-md-6">
                     <label for="form2" class="form-label text-light">Time Up Message <span class="text-danger">*</span></label>
                     <input type="text" id="form2" class="form-control" placeholder="Time is up" />
                     <p id="validate-message-two" class="text-danger"></p>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-md-6">
                     <label for="form3" class="form-label text-light">Background Colour <span class="text-danger">*</span></label>
                     <input type="text" class="form-control" id="form3" placeholder="Black"/>
                     <p id="validate-message-three" class="text-danger"></p>
                 </div>
-                <div class="col">
+                <div class="col-md-6">
                     <label for="form4" class="form-label text-light">Select Font</label>
                     <select id="form4" class="form-control form-select bg-dark text-light">
                         <option selected disabled value="">Choose...</option>
@@ -68,28 +68,22 @@
             </div>
             <h4 class="text-light fw-normal pb-2">Set Duration</h3>
 
-            <div class="time d-flex flex-wrap justify-content-center py-3 gap-3 mt-2 py-3">
+            <div class="row py-3 mt-2">
                 
-                <div class="col">
-                    <div class="col-md-6 col">
-                        <label for="form5" class="form-label text-light">Hour(s) <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" id="form5">
-                        <div id="validate-message-five" class="text-danger"></div>
-                    </div>
+                <div class="col-md-4">
+                    <label for="form5" class="form-label text-light">Hour(s) <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="form5">
+                    <div id="validate-message-five" class="text-danger"></div>
                 </div>
-                <div class="col">
-                    <div class="col-md-6">
-                        <label for="form6" class="form-label text-light">Minute(s) <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" id="form6">
-                        <div id="validate-message-six" class="text-danger"></div>
-                    </div>
+                <div class="col-md-4">
+                    <label for="form6" class="form-label text-light">Minute(s) <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="form6">
+                    <div id="validate-message-six" class="text-danger"></div>
                 </div>
-                <div class="col">
-                    <div class="col-md-6">
-                        <label for="form7" class="form-label text-light">Second(s) <span class="text-danger">*</span></label>
-                        <input type="number" class="form-control" id="form7">
-                        <div id="validate-message-seven" class="text-danger"></div>
-                    </div>
+                <div class="col-md-4">
+                    <label for="form7" class="form-label text-light">Second(s) <span class="text-danger">*</span></label>
+                    <input type="number" class="form-control" id="form7">
+                    <div id="validate-message-seven" class="text-danger"></div>
                 </div>
             </div>
 
